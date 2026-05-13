@@ -158,7 +158,7 @@
           </div>
         </div>
 
-        <!-- Elevator Simulator Row -->
+
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
             <img src="images/elevator.jpg" alt="Image of your project" class="img-fluid">
@@ -191,6 +191,39 @@
                 Through this project I learned about the importance of collaboration. I definitely don't think that I would have gotten through this if it weren't for my partner and his input. There were multiples times where I would be confused on how some of the instruction is worded or why he implemented a method in the
                 way that he did, so his ability to explain to me what was going on and why he made that decision was very valuable to me. It also showed me that I have a lot left to learn. I have found that I'm better at the theory portion, but when it actually comes to coding I'm much slower in that regard, so that is something that
                 I plan to work on both inside and outside of the classroom.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <img src="images/elevator.jpg" alt="Image of your project" class="img-fluid">
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3>Cafe Kiosk Simulator</h3>
+              <p>For my project of choice for a final project, my partner and I decided to simulate a cafe kiosk. We thought that it would
+              be a fun project to work on, but enough elements to make it complicated enough to fit the brief that was this project. There are a lot of moving
+              parts in this to consider, so we did our best to divide up the workload.</p>
+
+              <p>The functional requirements started with the simulation, which would display what the user was seeing to make it seem like an actual self serve kiosk
+              that you would go to order from. We had options for food and drinks, and each option you picked would go into its own separate classes, then into more detailed
+              classes depending on which type of drink or food you chose. Once finished, there is an option to check out, where the payment option would ask if you wanted to pay with cash
+              or card. If you pay with card, you will pay the exact amount, but with cash there are options to handle whether you paid too much or too little. Pay too little, and it will ask for
+              more money, and pay too much it will give you the change that you are owed. Afterward, the kiosk will thank you and your order will be completed, along with yuou receiving a receipt of your order. </p>
+
+              <p>The way I thought of the design was similar to the elevator simulator project. Different sections would handle the work behind the scenes, and then come together for the user to actually
+              interact with. It made sense, considering we wanted this to look and feel like a real kiosk. We decided to code this in Java, and we used several design patterns for different elements of the
+              project that we believed would make the most sense. Not only did this project have to be functional, but it also had to be feasible to accomplish in a way that made sense to both of us, as this project
+              included elements that neither of us have really interacted with in previous projects. </p>
+
+              <p>I was responsible for implementing everything related to food and the payment method. I knew that for the payments I wanted to use the strategy design pattern, because I needed it to fall under the same category
+              and function the same way, but easily able to switch out when we actually run the program. The strategy design pattern allowed me to do just that. I did add some extra details for the cash payment method, because that would
+              have to be able to handle whether or not the payment was equal to the due amount, meanwhile the card will just pay the exact amount every time. The food options were more difficult. I originally thought that I would use the Abstract
+              Design pattern, but after further research I found that it would be better for me to utilize the decorator design pattern. It would allow me to have plain options for the food, while also adding the option for both other flavors and updating
+              whatever was printed to the kiosk and the price. This was a challenge for me, because not only did I have to learn how the decorator pattern worked, but I had to make it work in two ways. Firstly, to make different flavors for bagels, croissants,
+              and muffins. Secondly, how to tie that all together in the Food class. I ended up creating concrete, flavor, and the different flavor classes for each of the different types of foods. As far as the Food class itself, I managed to tie bagels,
+              croissants, and muffins together by just making Food an abstract class, which will trickle down into Bagel, Croissant, and Muffin in order to get the description, price, and prepare the food.</p>
             </div>
           </div>
         </div>
